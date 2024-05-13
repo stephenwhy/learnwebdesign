@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>freeCodeCamp Survey Form</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="survey.css">
+  </head>
+  <body>
+    <h1 id="title">Let's commit your question </h1>
+    <p id="description">This is a survey questionnaire form</p>
+    <form id="survey-form">
+      <label id="name-label">
+        名字:<input id="name" type="text" placeholder="please input your name " required/>
+      </label>
+      <label id="email-label">
+        邮箱：<input id="email" type="email" placeholder="please input email address" required />
+      </label>
+      <label id="number-label">
+        号码：<input id="number" type="number" min=10 max=500  placeholder="please input number" required/>
+      </lable>
+      <label>选项:
+      <select id="dropdown">
+        <option>drop</option>
+        <option>down</option>
+      </select>
+      </label>
+      <label>
+        单选1:<input type="radio" name="danxuan" value="r1" />
+        单选2:<input type="radio" name="danxuan" value="r2" />
+        单选3:<input type="radio" name="danxuan" value="r3" />
+      </label>
+      <label>
+        复选1:<input type="checkbox" value="f1" name="fuxuan" />
+        复选2:<input type="checkbox" value="f2" name="fuxuan" />
+        复选3:<input type="checkbox" value="f3" name="fuxuan" />
+      </label>
+      <label>
+        评论：<textarea id="comment" name="survey-form"> </textarea>
+      </label>
+      <label>
+        <input type="submit" id="submit" name="survey-form" />
+        </label>
+    </form>
+  </body>
+</html> 
